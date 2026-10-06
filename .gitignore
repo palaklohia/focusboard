@@ -147,3 +147,14 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Project-specific
+.env
+.env.*
+!.env.example
+dist
+build
+.expo
+.DS_Store
+*.apk
+*.aab
