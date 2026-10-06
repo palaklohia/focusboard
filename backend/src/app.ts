@@ -4,6 +4,9 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import { env } from './config/env';
 import authRoutes from './routes/auth.routes';
+import projectRoutes from './routes/project.routes';
+import taskRoutes from './routes/task.routes';
+import dashboardRoutes from './routes/dashboard.routes';
 import { notFound, errorHandler } from './middleware/errorHandler';
 
 export const app = express();
@@ -28,6 +31,9 @@ app.get('/api/health', (_req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/projects', projectRoutes);
+app.use('/api/tasks', taskRoutes);
+app.use('/api/dashboard', dashboardRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
