@@ -45,3 +45,23 @@ export interface DashboardData {
   upNext: (Task & { focus: { score: number; reason: string } })[];
   recentActivity: Activity[];
 }
+
+export interface Project {
+  id: string;
+  name: string;
+  description: string | null;
+  status: ProjectStatus;
+  startDate: string | null;
+  endDate: string | null;
+  createdAt: string;
+  updatedAt: string;
+  taskCount: number;
+  completedTaskCount: number;
+  progress: number;
+  health: ProjectHealth;
+}
+
+export interface Paginated<T> {
+  data: T[];
+  pagination: { page: number; limit: number; total: number; totalPages: number };
+}
