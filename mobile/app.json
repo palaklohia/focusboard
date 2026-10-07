@@ -24,6 +24,12 @@
     },
     "plugins": [
       "expo-secure-store"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "97616344-31a8-4fe3-be0f-cef1d43d7e95"
+      }
+    },
+    "owner": "palak329"
   }
 }
