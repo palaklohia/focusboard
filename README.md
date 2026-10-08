@@ -8,10 +8,10 @@ One backend and one database serve both a web app and an Android app. Log in on 
 
 | What | Link |
 |---|---|
-| Web app | YOUR-VERCEL-URL |
+| Web app | https://focusboard-nu.vercel.app/ |
 | Backend API | https://focusboard-api.onrender.com/api |
 | Health check | https://focusboard-api.onrender.com/api/health |
-| Android APK | YOUR-APK-LINK |
+| Android APK | https://expo.dev/accounts/palak329/projects/focusboard/builds/5feca224-cc7b-4e65-9738-0888cddda75e |
 | Demo video | YOUR-VIDEO-LINK |
 
 The backend runs on a free tier and sleeps when idle. The first request can take 30 to 60 seconds, so open the health check link first.
